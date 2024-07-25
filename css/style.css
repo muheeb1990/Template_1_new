@@ -1,0 +1,292 @@
+/* Common*/
+/*
+
+- container 
+- obacity hover
+- section header
+- section padding
+- hover effect 1 (left to right)
+- hover effect 2 (top to bottom)
+- 
+*/
+
+/* 1- General style*/
+/*##################################################*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*to help making padding and border a piece of the margin*/
+}
+
+:root{
+    --mainColor : #6195ff;
+    --off-white-background: #e8e8e8;
+    --off-gray-background:#f9f9f9;
+    --white-color:#fff;
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+a{
+    text-decoration: none;
+}
+
+.pd-y{
+    padding: 120px 0;
+}
+
+.hover-opacity{
+    transition: opacity 0.1s;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+h1 ,h2 ,h3, h4, h5, h6{
+   font-family: montserrat,sans-serif; 
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 60px;
+    background-color: var(--mainColor);
+    margin: 0 auto 70px auto;
+    
+}
+
+.ltr-effect,.tb-effect{
+    position: relative;
+}
+
+.ltr-effect:after , .tb-effect:after{
+    position: absolute;
+    content: "";
+    background-color: rgb(30, 28, 28);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+.ltr-effect:after{
+    width: 0;
+    transition: width 0.5s;
+}
+
+.ltr-effect:hover:after{
+    width: 100%;
+}
+
+.tb-effect:after{
+    height: 0;
+    transition: height 0.5s;
+}
+
+.ltr-effect:hover .about-item-title ,.about-item-desc,
+.tb-effect:hover .about-item-title ,.about-item-desc{
+    color: var(--white-color);
+}
+
+
+.tb-effect:hover:after{
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* 2- the header style*/
+/*#############################################*/
+
+
+
+/* 3- the home section style*/
+/*#########################################*/
+
+
+/*About Section*/
+/*######################################################*/
+
+
+
+
+
+/*Portfolio Section*/
+
+
+
+/*Offer Sectioin*/
+/*##########################################################*/
+
+
+
+
+/*Service Section*/
+/*################################################*/
+
+
+
+
+/*Number Section*/
+/*#######################*/
+
+
+
+/*Pricing Section*/
+/*############################*/
+
+
+
+
+/*Testimonial Section*/
+/*##################################*/
+
+
+
+/*Team Section*/
+/*#####################################*/
+
+
+.team-content{
+    overflow: hidden;
+}
+
+.team-item{
+    width: 30%;
+    float: left;
+    background:var(--off-white-background);
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.team-item .team-img{
+    width: 90%;
+    margin: auto; 
+    position: relative;
+}
+
+.team-item .team-img img{
+    width: 100%;
+}
+
+.team-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.team-item:hover .team-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: var(--mainColor);
+    color: var(--white-color);
+    margin-left: auto;  
+}
+
+.team-overlay a i{
+    line-height: 40px;
+}
+
+
+
+.team-item .team-info-title{
+    color: #222;
+    margin: 10px 0;
+    transition: color 0.5s;
+}
+
+.team-item .team-info-text{
+    color: #999;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.5s;
+}
+
+.team-item.mg{
+    margin: 0 5%;
+}
+
+.team-item.tb-effect{
+    z-index: 1;
+}
+
+.team-item:hover .team-info-title{
+    color: var(--white-color);
+}
+
+.team-item:hover .team-info-text{
+    color: var(--mainColor);
+}
+
+
+/*Blog Section*/
+/*#########################################*/
+
+
+
+/**/
+/*##########################*/
+
+
+
+/*ääää*/
+
+  
+
+  
+ 
+  
+
+/*Section Footer*/
+/*################################*/
+

@@ -1,0 +1,57 @@
+.input-container{
+    overflow: hidden;
+}
+
+
+.form-group .username,
+.form-group .email{
+    width: 42%;
+    display: inline-block;
+}
+
+.form-group .username{
+    float: left;
+    margin-right: auto;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.form-group .email{
+    float: right;
+    margin-right: 54px;
+    margin-left: auto;
+    
+}
+
+.form-group .subject, .message{
+    width: 87%;
+    margin: 0 50px;
+    margin-bottom: 20px;
+}
+
+.input-btn{
+    background-color:var(--mainColor);
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    padding: 7px 20px;
+    color: var(--white-color);
+    border: 1px solid #999;
+    cursor: pointer;
+    transition: background  0.7s ;    
+}
+
+
+.input-btn:hover{
+    background-color: #999;
+    
+}
+
+.form-group .username,
+.form-group .email,
+.form-group .subject,
+.form-group .message{
+    background-color: var(--off-gray-background);
+    padding: 3px;
+    border: none;
+}

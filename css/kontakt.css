@@ -1,0 +1,36 @@
+.kontakt-content{
+    overflow: hidden;
+ }
+ 
+ 
+ 
+ .kontakt-content .kontakt-item{
+     float: left;
+     width: 30%;
+      
+ }
+ .kontakt-content .kontakt-item.mg{
+     margin: 0 5%;
+ }
+ 
+ 
+ .kontakt-item >.icon ,.kontakt-item-desc, .kontakt-item-title{
+     display: block;
+     text-align: center;
+     margin-bottom: 20px;
+     cursor: pointer; 
+ }
+ 
+ .kontakt-item .icon{
+     color: var(--mainColor);
+ }
+ 
+ .kontakt-item .kontakt-item-title{
+     font-weight: bold;
+ }
+ 
+ .kontakt-item .kontakt-item-desc{
+     font-size: smaller;
+     color: #999;
+ }
+ 
