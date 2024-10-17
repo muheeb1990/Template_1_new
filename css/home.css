@@ -1,6 +1,6 @@
 .home{
     height: 100vh;
-    background-image: url(/images/background/background1.jpg);
+    background-image: url(../images/background/background1.jpg);
     background-size: cover; /*css3 to learn more about it later*/
     position: relative;
 }
